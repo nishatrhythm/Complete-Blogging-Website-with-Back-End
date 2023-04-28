@@ -8,7 +8,7 @@
     <title>Complete Blogging Website</title>
 
     <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -38,7 +38,7 @@
                     <input type="file" id="avatar">
                 </div>
                 <button type="submit" class="btn">Sign Up</button>
-                <small>Already have an account? <a href="signin.html">Sign In</a></small>
+                <small>Already have an account? <a href="signin.php">Sign In</a></small>
             </form>
         </div>
     </section>
