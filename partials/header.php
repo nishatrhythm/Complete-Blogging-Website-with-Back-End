@@ -13,7 +13,7 @@ require 'config/database.php';
     <title>PHP & MySQL Blog Application with Admin Panel</title>
 
     <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="<?= ROOT_URL ?>css/style.css">
 
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -25,7 +25,7 @@ require 'config/database.php';
 <body>
     <nav>
         <div class="container nav__container">
-            <a href="index.html" class="nav__logo">Wikitricks</a>
+            <a href="<?= ROOT_URL ?>" class="nav__logo">Wikitricks</a>
             <ul class="nav__items">
                 <li><a href="<?= ROOT_URL ?>blog.php">Blog</a></li>
                 <li><a href="<?= ROOT_URL ?>about.php">About</a></li>
@@ -37,8 +37,8 @@ require 'config/database.php';
                         <img src="./images/avatar1.jpg" alt="">
                     </div>
                     <ul>
-                        <li><a href="<?= ROOT_URL ?>admin/dashboard.html">Dashboard</a></li>
-                        <li><a href="<?= ROOT_URL ?>logout.html">Logout</a></li>
+                        <li><a href="<?= ROOT_URL ?>admin/index.php">Dashboard</a></li>
+                        <li><a href="<?= ROOT_URL ?>logout.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>

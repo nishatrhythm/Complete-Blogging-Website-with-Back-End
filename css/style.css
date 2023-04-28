@@ -483,7 +483,9 @@ form {
     align-items: center;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     padding: 0.8rem 1.4rem;
     background-color: var(--color-gray-900);
     border-radius: var(--card-border-radius-2);
