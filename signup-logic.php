@@ -1,5 +1,4 @@
 <?php
-session_start();
 require 'config/database.php';
 
 // get signup form data if signup button was clicked
@@ -66,14 +65,15 @@ if (isset($_POST['submit'])) {
     }
 
     // redirect back to signup page if there was any problem
-    if ($_SESSION['signup']) {
+    if (isset($_SESSION['signup'])) {
         // pass form data back to signup page
         $_SESSION['signup-data'] = $_POST;
         header('location: ' . ROOT_URL . 'signup.php');
         die();
     } else {
         // insert new user into users table
-        $inset_user_query = "INSERT INTO users (firstname, lastname, username, email, password, avatar, is_admin) VALUES('$firstname', '$lastname', '$username', '$email', '$hashed_password', '$avatar_name', 0";
+        $insert_user_query = "INSERT INTO users SET firstname='$firstname', lastname='$lastname', username='$username', email='$email', password='$hashed_password', avatar='$avatar_name', is_admin=0";
+        $insert_user_query = mysqli_query($connection, $insert_user_query);
 
         if (!mysqli_errno($connection)) {
             // redirect to login page with success message
