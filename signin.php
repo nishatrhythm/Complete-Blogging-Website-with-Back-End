@@ -8,7 +8,7 @@
     <title>Complete Blogging Website</title>
 
     <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
