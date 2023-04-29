@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2023 at 04:29 PM
+-- Generation Time: Apr 29, 2023 at 09:10 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -43,7 +43,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `email`, `password`, `avatar`, `is_admin`) VALUES
-(1, 'Nishat', 'Mahmud', 'nishat', 'nishatrhythm@gmail.com', '$2y$10$Vf3Abp5A.tgWj/wvmIgzT.yhw1o5dZW2.TfDULqg0NEnknpHy0.Wy', '1682778128Rhythm.jpg', 0);
+(1, 'Nishat', 'Mahmud', 'nishat', 'nishatrhythm@gmail.com', '$2y$10$u1972Vg8F0Y2hgUBxhLaM.1fnYWn4m3952sSFeQpmCMBvPGOsjX4W', '1682789454Rhythm.jpg', 1);
 
 --
 -- Indexes for dumped tables
