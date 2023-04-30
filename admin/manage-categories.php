@@ -27,7 +27,7 @@ include 'partials/header.php';
                     </li>
                     <li>
                         <a href="manage-users.php"><i class="uil uil-users-alt"></i>
-                            <h5>Manage User</h5>
+                            <h5>Manage Users</h5>
                         </a>
                     </li>
                     <li>
@@ -48,26 +48,26 @@ include 'partials/header.php';
             <table>
                 <thead>
                     <tr>
-                        <th>Title</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th align="center">Title</th>
+                        <th align="center">Edit</th>
+                        <th align="center">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Travel</td>
-                        <td><a href="edit-category.php" class="btn sm">Edit</a></td>
-                        <td><a href="delete-category.php" class="btn sm danger">Delete</a></td>
+                        <td align="center"><a href="edit-category.php" class="btn sm">Edit</a></td>
+                        <td align="center"><a href="delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
                     <tr>
                         <td>Wid Life</td>
-                        <td><a href="edit-category.php" class="btn sm">Edit</a></td>
-                        <td><a href="delete-category.php" class="btn sm danger">Delete</a></td>
+                        <td align="center"><a href="edit-category.php" class="btn sm">Edit</a></td>
+                        <td align="center"><a href="delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
                     <tr>
                         <td>Music</td>
-                        <td><a href="edit-category.php" class="btn sm">Edit</a></td>
-                        <td><a href="delete-category.php" class="btn sm danger">Delete</a></td>
+                        <td align="center"><a href="edit-category.php" class="btn sm">Edit</a></td>
+                        <td align="center"><a href="delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
                 </tbody>
             </table>

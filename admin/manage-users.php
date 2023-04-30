@@ -37,6 +37,24 @@ $users = mysqli_query($connection, $query);
                 ?>
             </p>
         </div>
+    <?php elseif (isset($_SESSION['delete-user'])) :  // shows if delete user was NOT successful 
+    ?>
+        <div class="alert__message error container">
+            <p>
+                <?= $_SESSION['delete-user'];
+                unset($_SESSION['delete-user']);
+                ?>
+            </p>
+        </div>
+    <?php elseif (isset($_SESSION['delete-user-success'])) :  // shows if edit user was successful 
+    ?>
+        <div class="alert__message success container">
+            <p>
+                <?= $_SESSION['delete-user-success'];
+                unset($_SESSION['delete-user-success']);
+                ?>
+            </p>
+        </div>
     <?php endif ?>
 
     <div class="container dashboard__container">
@@ -62,7 +80,7 @@ $users = mysqli_query($connection, $query);
                     </li>
                     <li>
                         <a href="manage-users.php" class="active"><i class="uil uil-users-alt"></i>
-                            <h5>Manage User</h5>
+                            <h5>Manage Users</h5>
                         </a>
                     </li>
                     <li>
@@ -83,11 +101,11 @@ $users = mysqli_query($connection, $query);
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Username</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                        <th>Admin</th>
+                        <th align="center">Name</th>
+                        <th align="center">Username</th>
+                        <th align="center">Edit</th>
+                        <th align="center">Delete</th>
+                        <th align="center">Admin</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -95,9 +113,9 @@ $users = mysqli_query($connection, $query);
                         <tr>
                             <td><?= "{$user['firstname']} {$user['lastname']}" ?></td>
                             <td><?= $user['username'] ?></td>
-                            <td><a href="<?= ROOT_URL ?>admin/edit-user.php?id=<?= $user['id'] ?>" class="btn sm">Edit</a></td>
-                            <td><a href="<?= ROOT_URL ?>admin/delete-user.php?id=<?= $user['id'] ?>" class="btn sm danger">Delete</a></td>
-                            <td><?= $user['is_admin'] ? 'Yes' : 'No' ?></td>
+                            <td align="center"><a href="<?= ROOT_URL ?>admin/edit-user.php?id=<?= $user['id'] ?>" class="btn sm">Edit</a></td>
+                            <td align="center"><a href="<?= ROOT_URL ?>admin/delete-user.php?id=<?= $user['id'] ?>" class="btn sm danger">Delete</a></td>
+                            <td align="center"><?= $user['is_admin'] ? 'Yes' : 'No' ?></td>
                         </tr>
                     <?php endwhile ?>
                 </tbody>
