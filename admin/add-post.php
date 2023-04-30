@@ -19,7 +19,7 @@ include 'partials/header.php';
                 <option value="1">Food</option>
                 <option value="1">Music</option>
             </select>
-            <textarea rows="10" placeholder="Body"></textarea>
+            <textarea style="resize:none" rows="10" placeholder="Body"></textarea>
             <div class="form__control inline">
                 <input type="checkbox" id="is_featured" checked>
                 <label for="is_featured">Featured</label>
