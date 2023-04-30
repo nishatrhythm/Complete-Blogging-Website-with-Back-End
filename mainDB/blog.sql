@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2023 at 09:10 PM
+-- Generation Time: Apr 30, 2023 at 12:49 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -43,7 +43,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `email`, `password`, `avatar`, `is_admin`) VALUES
-(1, 'Nishat', 'Mahmud', 'nishat', 'nishatrhythm@gmail.com', '$2y$10$u1972Vg8F0Y2hgUBxhLaM.1fnYWn4m3952sSFeQpmCMBvPGOsjX4W', '1682789454Rhythm.jpg', 1);
+(1, 'Nishat', 'Mahmud', 'nishat', 'nishatrhythm@gmail.com', '$2y$10$u1972Vg8F0Y2hgUBxhLaM.1fnYWn4m3952sSFeQpmCMBvPGOsjX4W', '1682789454Rhythm.jpg', 1),
+(2, 'Rizwan', 'Hasan', 'rizwan', 'rizwanhasan226@gmail.com', '$2y$10$C63Cwvz5XaP2eIuR2d457uMqJu1c3RMTyZ1fviSMMGKFaebUB9vqS', '1682845500Rizwan.jpg', 0),
+(3, 'Safwan', 'Hasan', 'safwan', 'safwanhasan220@gmail.com', '$2y$10$mgBSB8NEWNdC3YjtL74Ga.DX3VuO0jACJdxOjsQKLCJl0J8pxP0pC', '1682849711Safwan.jpg', 0);
 
 --
 -- Indexes for dumped tables
@@ -63,7 +65,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
