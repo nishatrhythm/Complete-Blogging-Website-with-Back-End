@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2023 at 06:57 AM
+-- Generation Time: May 01, 2023 at 09:54 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -66,7 +66,10 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `title`, `body`, `thumbnail`, `date_time`, `category_id`, `author_id`, `is_featured`) VALUES
-(1, 'Go Bangladesh', 'Lorem ipsum dolar sit amet pecentads fkndfsf dfskkmsdf dsfdsfds dsffdsf', '1682916854Future Work.png', '2023-05-01 04:54:14', 4, 1, 0);
+(1, 'Go Bangladesh', 'Lorem ipsum dolar sit amet pecentads fkndfsf dfskkmsdf dsfdsfds dsffdsf', '1682916854Future Work.png', '2023-05-01 04:54:14', 1, 1, 1),
+(2, 'SSC Exam 2023', 'SSC exam lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', '1682917538Screenshot_1.png', '2023-05-01 05:05:38', 6, 9, 0),
+(3, 'Digital Devices', 'lorew asdfsfdskmdsf dsfdsfds dsfds dsfdsf dsfdsfdsf', '1682919520Screenshot_4.png', '2023-05-01 05:38:40', 4, 10, 0),
+(5, 'BCS', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', '1682927002BCS.png', '2023-05-01 06:40:09', 1, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -132,7 +135,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`

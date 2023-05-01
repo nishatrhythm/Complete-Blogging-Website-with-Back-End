@@ -101,12 +101,12 @@ $users = mysqli_query($connection, $query);
             <?php if(mysqli_num_rows($users) > 0) : ?>
             <table>
                 <thead>
-                    <tr>
-                        <th align="center">Name</th>
-                        <th align="center">Username</th>
-                        <th align="center">Edit</th>
-                        <th align="center">Delete</th>
-                        <th align="center">Admin</th>
+                    <tr align="center">
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                        <th>Admin</th>
                     </tr>
                 </thead>
                 <tbody>

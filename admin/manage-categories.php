@@ -98,10 +98,10 @@ $categories = mysqli_query($connection, $query);
             <?php if (mysqli_num_rows($categories) > 0) : ?>
                 <table>
                     <thead>
-                        <tr>
-                            <th align="center">Title</th>
-                            <th align="center">Edit</th>
-                            <th align="center">Delete</th>
+                        <tr align="center">
+                            <th>Title</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
