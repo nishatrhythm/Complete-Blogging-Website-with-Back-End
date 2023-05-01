@@ -33,6 +33,7 @@ unset($_SESSION['add-user-data']);
             <input type="email" name="email" value="<?= $email ?>" placeholder="Email">
             <input type="password" name="createpassword" value="<?= $createpassword ?>" placeholder="Create Password">
             <input type="password" name="confirmpassword" value="<?= $confirmpassword ?>" placeholder="Confirm Password">
+            <label for="avatar">User Role</label>
             <select name="userrole">
                 <option value="0">Author</option>
                 <option value="1">Admin</option>
