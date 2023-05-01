@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2023 at 07:11 PM
+-- Generation Time: May 01, 2023 at 06:57 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -60,6 +60,13 @@ CREATE TABLE `posts` (
   `author_id` int(11) UNSIGNED NOT NULL,
   `is_featured` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `title`, `body`, `thumbnail`, `date_time`, `category_id`, `author_id`, `is_featured`) VALUES
+(1, 'Go Bangladesh', 'Lorem ipsum dolar sit amet pecentads fkndfsf dfskkmsdf dsfdsfds dsffdsf', '1682916854Future Work.png', '2023-05-01 04:54:14', 4, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -125,7 +132,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
